@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+    <title>My Little Playlist App</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <!-- Navbar content -->
+        <a class="navbar-brand" href="#">My Playlist</a>
+    </nav>
+
+    <!-- Main content goes here-->
+    <div class="container">
+
+        <div class="main-content">
+            <h1>Here are some of my favourite songs</h1>
+            <p class="lead">Each playlist item has a cover image, artist name, song name...</p>
+
+            <div class="form-group filter-input">
+                <input class="form-control input-lg" id="inputlg" type="text" placeholder="What's your mood?">
+            </div>
+
+            <!--
+                <p>Your playlist is played a total of <b>456</b> times</p>
+            -->
+
+            <p id="playedText"></p>
+
+            <div class="song-container">
+                <!--
+                <div class="card">
+                    <div class="row card-body">
+                        <div class="col-sm-8">
+                            <h5 class="card-title">Ed Sheeren</h5>
+                            <p class="card-text">Bad Habits</p>
+                            <p class="card-text">Played 34 times</p>
+                            <a href="#" class="btn btn-primary">See more</a>
+                            <a href="#" class="btn btn-danger">Hide</a>
+                        </div>
+                        <div class="col-sm-4 card-right-content">
+                            <img class="img-fluid" src="images/ed.jpeg"/>
+                        </div>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/playlist.js"></script>
+</body>
+
+</html>

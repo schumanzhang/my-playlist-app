@@ -1,0 +1,17 @@
+{
+  "name": "my-playlist-app",
+  "version": "1.0.0",
+  "description": "a simple playlist app in javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "playlist"
+  ],
+  "author": "schumanzhang",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.0.2"
+  }
+}
