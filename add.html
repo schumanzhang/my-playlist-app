@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<head>
+    <title>My Little Playlist App</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <!-- Navbar content -->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">My Playlist</a>
+            <ul class="navbar-nav nav-horizontal">
+                <li class="nav-item">
+                    <a class="nav-link" href="./search.html">Search</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./add.html">Add</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <!-- Main content goes here-->
+    <div class="container">
+
+        <div class="main-content">
+            <h1>Add a new song to my favourite playlist</h1>
+            <p class="lead">Fill out the information below</p>
+
+            <div class="row">
+                <div class="col-sm-4"></div>
+
+                <div class="col-sm-4">
+                    <div class="spinner-border" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+
+                    <div class="error" id="errorMessage">
+                        <p>Sorry an error has occured</p>
+                    </div>
+
+                    <div class="success" id="successMessage">
+                        <p>Your song has been successfully submitted</p>
+                    </div>
+
+                    <form id="song-form">
+                        <div class="mb-3">
+                            <label for="artist" class="form-label">Artist*</label>
+                            <input type="text" class="form-control" id="artist"
+                                placeholder="Name of artist">
+                            <span class="error error-artist">Artist name is required</span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="songName" class="form-label">Song name*</label>
+                            <input type="text" class="form-control" id="songName"
+                                placeholder="Name of song">
+                            <span class="error error-song">Song name is required</span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="imageLink" class="form-label">Image</label>
+                            <input type="text" class="form-control" id="imageLink"
+                                placeholder="Image link">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="mood" class="form-label">Mood*</label>
+                            <input type="text" class="form-control" id="mood"
+                                placeholder="Mood of the song">
+                            <span class="error error-mood">Mood is required</span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="played" class="form-label">Played*</label>
+                            <input type="text" class="form-control" id="played"
+                                placeholder="How many times is it played">
+                            <span class="error error-played">Played is required and must be a number</span>
+                        </div>
+
+                        <button class="btn btn-success" type="submit">Submit song</button>
+                    </form>
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+
+            <!--
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+
+            <div class="error" id="errorMessage">
+                <p>Sorry an error has occured</p>
+            </div>
+        -->
+
+
+        </div>
+    </div>
+
+    <script src="js/add.js"></script>
+</body>
+
+</html>

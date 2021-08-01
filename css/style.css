@@ -28,7 +28,37 @@
     margin-bottom: 20px;
 }
 
+.search-input {
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#btn-search {
+    margin-top: 15px;
+}
+
 .title-image {
     margin-bottom: 20px;
 }
+
+.nav-horizontal {
+    flex-direction: row;
+}
   
+.nav-item {
+    margin-right: 30px;
+}
+
+.spinner-border {
+    margin-top: 10px;
+}
+
+.error {
+    color: red;
+}
+
+.img-song {
+    height: 120px;
+    width: 120px;
+}
